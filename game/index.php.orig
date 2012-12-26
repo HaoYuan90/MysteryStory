@@ -1,0 +1,26 @@
+<?php
+$js_config = array('script_default_stage_id' => '2');
+// TODO: security (might not be needed here, if it's in place for getjson.php)
+if (isset($_GET['id'])) {
+    $js_config['script_default_id'] = $_GET['id'];
+}
+?>
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>DetX</title>
+    <script type="text/javascript">var config = <?php print json_encode($js_config) ?>;</script>
+    <script type="text/javascript" src="../lime/closure/closure/goog/base.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26347000-1']);
+        _gaq.push(['_trackPageview']);
+
+    </script>
+</head>
+
+<body onload="main.start()"></body>
+
+</html>

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd ../game
+python2 ../lime/bin/lime.py update

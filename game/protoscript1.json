@@ -1,0 +1,798 @@
+{
+    "actionset":{
+        "actions":{
+            "0":[
+                [
+                    "N",
+                    "say",
+                    "The story so far."
+                ],
+                [
+                    "N",
+                    "say",
+                    "Detective Ace is currently investigating the case of Old Madam Lavisham, the matriarchal head of the Lavisham family, and majority shareholder of the Lavisham fashion empire. While on board a cruise ship holidaying with her family she was found dead overnight. The ship put to shore immediately and investigations were conducted. At the time, the Old Madam was on board with her two sons, Sonone and Sontwo, Sontwo's wife, Twowife, and the maid, Leila. The autopsy will take some time but no physical wounds were found. The family report that she was last scene enjoying herself at dinner, before being taken to bed by the prime suspect, Leila..."
+                ],
+                [
+                    "*",
+                    "actionset_change",
+                    "1"
+                ]
+            ],
+            "1":[
+                [
+                    "P",
+                    "say",
+                    "Detective."
+                ],
+                [
+                    "A",
+                    "say",
+                    "Constable Tulipov. Is the suspect inside?"
+                ],
+                [
+                    "N",
+                    "say",
+                    "Tulipov hands over a file."
+                ],
+                [
+                    "P",
+                    "say",
+                    "Yes, sir. Lelia Fonsey, aged 28, single, engaged as maid to Madam Lavisham."
+                ],
+                [
+                    "A",
+                    "say",
+                    "It says here she's a trained nurse."
+                ],
+                [
+                    "P",
+                    "say",
+                    "Yes; I think that's why they hired her. On a big salary too. You think she did it?"
+                ],
+                [
+                    "A",
+                    "pic_change",
+                    "Asmile"
+                ],
+                [
+                    "A",
+                    "say",
+                    "We'll find out. Here, hold this for a few minutes."
+                ],
+                [
+                    "N",
+                    "say",
+                    "Ace hands over two cups of coffee, and enters the room"
+                ],
+                [
+                    "*",
+                    "actionset_change",
+                    "2"
+                ]
+            ],
+            "2":[
+                [
+                    "L",
+                    "pic_change",
+                    "Langry"
+                ],
+                [
+                    "A",
+                    "say",
+                    "<em>She doesn't look the sort to commit murder...</em>"
+                ],
+                [
+                    "A",
+                    "say",
+                    "Good morning. Miss Leila Fonsey?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "\u2026"
+                ],
+                [
+                    "A",
+                    "say",
+                    "I'm Detective Ace, and I'm part of the team investigating the case. Pleased to meet you."
+                ],
+                [
+                    "L",
+                    "say",
+                    "\u2026"
+                ],
+                [
+                    "A",
+                    "pic_change",
+                    "Ahalfsmile"
+                ],
+                [
+                    "A",
+                    "say",
+                    "<em>Looks like she's a tough clam to crack. I'll have to butter her up and play the good cop; if I frighten her she'll just close up and not say anything.</em>"
+                ],
+                [
+                    "A",
+                    "say",
+                    "I just want to help, Ma'am. And it'll be easier for the two of us if you cooperated and told us the truth, Miss Fonsey."
+                ],
+                [
+                    "L",
+                    "say",
+                    "\u2026you want the truth?"
+                ],
+                [
+                    "L",
+                    "pic_change",
+                    "Ltear"
+                ],
+                [
+                    "L",
+                    "say",
+                    "I did not kill Madame. Now let me go."
+                ],
+                [
+                    "A",
+                    "pic_change",
+                    "Eyebrows"
+                ],
+                [
+                    "A",
+                    "say",
+                    "<em>\u2026wow. Somehow I didn't expect that\u2026</em>"
+                ],
+                [
+                    "A",
+                    "pic_change",
+                    "Ahalfsmile"
+                ],
+                [
+                    "N",
+                    "say",
+                    "Ace closes the file on the desk and leans back, smiling."
+                ],
+                [
+                    "A",
+                    "say",
+                    "Well, that was easy. Here, you look a little pale, let me get you something"
+                ],
+                [
+                    "N",
+                    "say",
+                    "Ace pokes his head out the door and shouts something. A while later, Constable Tulipov comes back in with two cups of coffee."
+                ],
+                [
+                    "A",
+                    "say",
+                    "Here, have some coffee, relax a little. We just wanna have a little chat, find out a few things."
+                ],
+                [
+                    "L",
+                    "say",
+                    "I did not kill Madame. What else do you want to know?"
+                ],
+                [
+                    "N",
+                    "say",
+                    "Ace takes a sip of his coffee and sighs."
+                ],
+                [
+                    "A",
+                    "say",
+                    "It's good."
+                ],
+                [
+                    "N",
+                    "say",
+                    "L gingerly takes a sip, then starts drinking the coffee."
+                ],
+                [
+                    "*",
+                    "actionset_change",
+                    "3"
+                ]
+            ],
+            "3":[
+                [
+                    "L",
+                    "pic_change",
+                    "Ldefault"
+                ],
+                [
+                    "A",
+                    "say",
+                    "There we go. So, Miss Fonsey -"
+                ],
+                [
+                    "L",
+                    "say",
+                    "Leila."
+                ],
+                [
+                    "A",
+                    "say",
+                    "<em>Looks like I was right; she's opening up.</em>"
+                ],
+                [
+                    "A",
+                    "say",
+                    "Leila. Nice to meet you. We just have a few questions. First one -"
+                ],
+                [
+                    "*",
+                    "actionset_change_mcq",
+                    [
+                        {
+                            "id":"3a",
+                            "main_char_id":"A",
+                            "title":"How is- How was your relationship with the Old Madame?"
+                        },
+                        {
+                            "id":"3b",
+                            "main_char_id":"A",
+                            "title":"I hear your relationship with the Old Madam isn't so good."
+                        }
+                    ]
+                ]
+            ],
+            "3a":[
+                [
+                    "L",
+                    "pic_change",
+                    "Ltear"
+                ],
+                [
+                    "L",
+                    "say",
+                    "She was like a grandmother to me. No, like a mother. She treated me like a daughter. At first, she was mean to me, because of her frustrations at her illness -"
+                ],
+                [
+                    "A",
+                    "say",
+                    "She was ill?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "Yes. She had to take many pills for her condition, and she hated to swallow all those pills. She resented me making her swalllow them. But as we spent more time she started to warm up to me. But\u2026"
+                ],
+                [
+                    "A",
+                    "say",
+                    "But\u2026?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "But lately her temper has gotten bad again. The laywers keep coming to see her every day and spend entire mornings locked up with her in her study"
+                ],
+                [
+                    "A",
+                    "say",
+                    "You were not with her?"
+                ],
+                [
+                    "N",
+                    "say",
+                    "Leila shakes her head"
+                ],
+                [
+                    "L",
+                    "say",
+                    "No, they said they were doing something confidential and I was not part of the family-"
+                ],
+                [
+                    "A",
+                    "say",
+                    "'They'? Part of the family? Her sons?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "Yes, both the young masters and her daughter in law. There was a lot of shouting but I was outside and couldn't hear anything. I'm sorry, I don't know what went on in there."
+                ],
+                [
+                    "A",
+                    "say",
+                    "<em>Shouting, locked rooms and lawyers. I bet I know what's going on\u2026</em>"
+                ],
+                [
+                    "A",
+                    "say",
+                    "But you were on good terms with the old lady."
+                ],
+                [
+                    "L",
+                    "say",
+                    "Yes."
+                ],
+                [
+                    "*",
+                    "clue_get",
+                    "LEILA AND THE OLD MADAM"
+                ],
+                [
+                    "*",
+                    "actionset_change",
+                    "4"
+                ]
+            ],
+            "3b":[
+                [
+                    "L",
+                    "pic_change",
+                    "Langry"
+                ],
+                [
+                    "L",
+                    "say",
+                    "Wha-? Who did you hear this from?"
+                ],
+                [
+                    "A",
+                    "say",
+                    "<em>\u2026oops.</em>"
+                ],
+                [
+                    "L",
+                    "say",
+                    "I think you've been listening to the wrong people, Mr. Detective. I think you can ask her sons what they do with her behind closed doors."
+                ],
+                [
+                    "A",
+                    "say",
+                    "Behind closed doors\u2026?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "The laywers keep coming to see her every day and spend entire mornings locked up with her in her study."
+                ],
+                [
+                    "A",
+                    "say",
+                    "You were not with her?"
+                ],
+                [
+                    "N",
+                    "say",
+                    "Leila shakes her head"
+                ],
+                [
+                    "L",
+                    "say",
+                    "No, they said they were doing something confidential and I was not part of the family-"
+                ],
+                [
+                    "A",
+                    "say",
+                    "'They'? Part of the family? Her sons?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "Yes, both the young masters and her daughter in law. I was locked outside; they were shouting inside. I think you should ask them who had a bad relationship with the Old Madam"
+                ],
+                [
+                    "A",
+                    "say",
+                    "<em>Shouting, locked rooms and lawyers. I bet I know what's going on\u2026</em>"
+                ],
+                [
+                    "A",
+                    "say",
+                    "Ah, okay, I'm sorry. Was there any reason for Old Madam's bad temper?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "She had always had a bad temper. She had to take many pills for her condition, and she hated to swallow all those pills. She resented me making her swalllow them. But she had gotten used to them, and she never gave me any trouble\u2026until the lawyers came."
+                ],
+                [
+                    "*",
+                    "actionset_change",
+                    "4"
+                ]
+            ],
+            "4":[
+                [
+                    "A",
+                    "say",
+                    "I see, okay."
+                ],
+                [
+                    "L",
+                    "pic_change",
+                    "Ldefault"
+                ],
+                [
+                    "A",
+                    "say",
+                    "Leila, I have to say, it looks pretty bad for you now. The rest of the family have claimed that you were on bad terms with the old mistress-"
+                ],
+                [
+                    "L",
+                    "pic_change",
+                    "Langry"
+                ],
+                [
+                    "L",
+                    "say",
+                    "But that's not true!"
+                ],
+                [
+                    "A",
+                    "say",
+                    "It is what they say though. And you were the last person seen with Miss Havisham, helping her to her room after dinner."
+                ],
+                [
+                    "L",
+                    "pic_change",
+                    "Ltear"
+                ],
+                [
+                    "L",
+                    "say",
+                    "\u2026"
+                ],
+                [
+                    "A",
+                    "say",
+                    "It looks bad, Leila. And I've gotta say you look like the prime suspect now."
+                ],
+                [
+                    "N",
+                    "say",
+                    "When Leila speaks, it is with a whispered voice."
+                ],
+                [
+                    "L",
+                    "say",
+                    "But I didn't kill the Old Madam\u2026"
+                ],
+                [
+                    "*",
+                    "actionset_change",
+                    "5"
+                ]
+            ],
+            "5":[
+                [
+                    "N",
+                    "say",
+                    "Ace smiles reassuringly at Leila"
+                ],
+                [
+                    "A",
+                    "say",
+                    "I know you didn't. But we're still going to need to prove your innocence. Now\u2026"
+                ],
+                [
+                    "*",
+                    "actionset_change_mcq",
+                    [
+                        {
+                            "id":"6a",
+                            "main_char_id":"A",
+                            "title":"I'm curious to know about these pills"
+                        },
+                        {
+                            "id":"6b",
+                            "main_char_id":"A",
+                            "title":"What can you tell me about where you were on that night?"
+                        }
+                    ]
+                ]
+            ],
+            "6a":[
+                [
+                    "A",
+                    "say",
+                    "What can you tell me about them?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "The Old Madam had a few diseases. Arthritis, Osteoporosis, High Blood Pressure, [disease name], [disease name]\u2026"
+                ],
+                [
+                    "A",
+                    "say",
+                    "/That's quite an impressive list. And she sounds like what she knows what she's talking about. A trained nurse indeed.\""
+                ],
+                [
+                    "A",
+                    "say",
+                    "Yes? And she took medication for all these?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "Yes. Part of my duties were to see to it that she got the right medicine at the right time. I keep a logbook and a bag of medicines."
+                ],
+                [
+                    "A",
+                    "say",
+                    "<em>I'd better make a note of that and check the evidence room later.</em>"
+                ],
+                [
+                    "A",
+                    "say",
+                    "And you were the only one who was handling the drugs?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "I am a trained nurse. But yes, I keep the drugs with me."
+                ],
+                [
+                    "A",
+                    "pic_change",
+                    "Aeyebrowlift"
+                ],
+                [
+                    "A",
+                    "say",
+                    "This looks bad, Leila. It looks like you might have been able to meddle with the drugs, being the only one who comes into contact with the drugs."
+                ],
+                [
+                    "*",
+                    "actionset_change_mcq",
+                    [
+                        {
+                            "id":"6a yes",
+                            "main_char_id":"A",
+                            "title":"Do you pick up the drugs from the pharmacy as well?"
+                        },
+                        {
+                            "id":"6a no",
+                            "main_char_id":"A",
+                            "title":"Was the Old Lady physically weak?"
+                        }
+                    ]
+                ]
+            ],
+            "6a no":[
+                [
+                    "A",
+                    "say",
+                    "What was her physical state?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "She was an old woman. She was a little deaf, and quite blind, and was very easily tired. But she had a temper."
+                ],
+                [
+                    "A",
+                    "say",
+                    "Did she take it out on me?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "She got frustrated and scolded me. But no; one day, she chased Sontwo out of the study and was hitting him with her cane\u2026"
+                ],
+                [
+                    "A",
+                    "say",
+                    "<em>Wow. Strong.</em>"
+                ],
+                [
+                    "L",
+                    "say",
+                    "\u2026but no, I don't think she was weak."
+                ],
+                [
+                    "*",
+                    "actionset_change",
+                    "7"
+                ]
+            ],
+            "6a yes":[
+                [
+                    "L",
+                    "say",
+                    "No. We have a prescription from the family doctor every three months. But Master Sontwo and his wife are in charge of purchasing and collecting the drugs"
+                ],
+                [
+                    "A",
+                    "say",
+                    "<em>Here we go. Either this is a play to frame the two of them, or we've got another suspect to worry about.</em>"
+                ],
+                [
+                    "*",
+                    "clue_get",
+                    "DRUGS"
+                ],
+                [
+                    "*",
+                    "actionset_change",
+                    "7"
+                ]
+            ],
+            "6b":[
+                [
+                    "A",
+                    "say",
+                    "Where were you, after dinner?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "I was with the Old Madam in our room the entire time."
+                ],
+                [
+                    "A",
+                    "say",
+                    "<em>There goes the alibi.</em>"
+                ],
+                [
+                    "*",
+                    "actionset_change",
+                    "7"
+                ]
+            ],
+            "7":[
+                [
+                    "N",
+                    "say",
+                    "Constable Tulipov comes into the room."
+                ],
+                [
+                    "T",
+                    "say",
+                    "Ace. We got the autopsy result."
+                ],
+                [
+                    "A",
+                    "say",
+                    "Thank you. I was just finishing up."
+                ],
+                [
+                    "A",
+                    "say",
+                    "That's all from me, Leila. I'm afraid you'll still be detained for a while but I don't think we have any more questions for you."
+                ],
+                [
+                    "A",
+                    "say",
+                    "Tell Tulipov if you need anything. I'll see you around-"
+                ],
+                [
+                    "L",
+                    "say",
+                    "Detective?"
+                ],
+                [
+                    "A",
+                    "say",
+                    "Yes?"
+                ],
+                [
+                    "L",
+                    "say",
+                    "Thank you."
+                ],
+                [
+                    "A",
+                    "pic_change",
+                    "Ahalfsmile"
+                ],
+                [
+                    "A",
+                    "say",
+                    "No problem\u2026"
+                ],
+                [
+                    "*",
+                    "actionset_change_terminal"
+                ]
+            ]
+        },
+        "actionsets":{
+            "0":{
+                "id":"0",
+                "main_char_id":"A",
+                "title":""
+            },
+            "1":{
+                "id":"1",
+                "main_char_id":"A",
+                "title":""
+            },
+            "2":{
+                "id":"2",
+                "main_char_id":"A",
+                "title":""
+            },
+            "3":{
+                "id":"3",
+                "main_char_id":"A",
+                "title":""
+            },
+            "3a":{
+                "id":"3a",
+                "main_char_id":"A",
+                "title":"How is- How was your relationship with the Old Madame?"
+            },
+            "3b":{
+                "id":"3b",
+                "main_char_id":"A",
+                "title":"I hear your relationship with the Old Madam isn't so good."
+            },
+            "4":{
+                "id":"4",
+                "main_char_id":"A",
+                "title":""
+            },
+            "5":{
+                "id":"5",
+                "main_char_id":"A",
+                "title":""
+            },
+            "6a":{
+                "id":"6a",
+                "main_char_id":"A",
+                "title":"I'm curious to know about these pills"
+            },
+            "6a no":{
+                "id":"6a no",
+                "main_char_id":"A",
+                "title":"Was the Old Lady physically weak?"
+            },
+            "6a yes":{
+                "id":"6a yes",
+                "main_char_id":"A",
+                "title":"Do you pick up the drugs from the pharmacy as well?"
+            },
+            "6b":{
+                "id":"6b",
+                "main_char_id":"A",
+                "title":"What can you tell me about where you were on that night?"
+            },
+            "7":{
+                "id":"7",
+                "main_char_id":"A",
+                "title":"Conclusion"
+            }
+        },
+        "init":"0",
+        "terminal":"7"
+    },
+    "char":{
+        "*":{
+            "name":"Engine",
+            "pics":[]
+        },
+        "A":{
+            "name":"Detective",
+            "pics":[
+                "Aeyebrowlift",
+                "Ahalfsmile",
+                "Asmile",
+                "Eyebrows"
+            ]
+        },
+        "L":{
+            "name":"Leila",
+            "pics":[
+                "Langry",
+                "Ldefault",
+                "Ltear"
+            ]
+        },
+        "N":{
+            "name":"Narrator",
+            "pics":[]
+        },
+        "P":{
+            "name":"Policeman",
+            "pics":[]
+        },
+        "T":{
+            "name":"Tulipov",
+            "pics":[]
+        }
+    }
+}

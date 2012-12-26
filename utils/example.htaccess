@@ -1,0 +1,4 @@
+AuthUserFile /var/www/html/utils/.htpasswd
+AuthName "Secret Stuff" 
+AuthType Basic
+require valid-user   

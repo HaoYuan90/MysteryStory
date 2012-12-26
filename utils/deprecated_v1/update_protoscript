@@ -1,0 +1,4 @@
+#!/bin/sh
+
+python2 script2js.py < protoscript1.csv > ../game/protoscript1.json
+

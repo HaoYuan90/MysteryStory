@@ -1,0 +1,2 @@
+#!/bin/sh
+python2 xlsx2sql.py v2.xlsx > v2.sql
